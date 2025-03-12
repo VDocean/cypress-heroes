@@ -72,10 +72,14 @@ npx cypress open
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Test Case by ME
 =======
 ## Test Case by MIM
 >>>>>>> 8ada695 (readme)
+=======
+## Test Case by ME
+>>>>>>> ea0f798 (edicao readme2)
 
 **Supondo que a regra de negócio é a seguinte:**
 
