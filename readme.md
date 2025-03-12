@@ -65,7 +65,7 @@ into de paste client
 npx cypress open
 ```
 
-## Test Case by MIM
+## Test Case by ME
 
 **Supondo que a regra de negócio é a seguinte:**
 
