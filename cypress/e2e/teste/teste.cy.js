@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import LoginPage from "../pages/LoginPage"
 import HiringPage from "../pages/HiringPage";
 
@@ -46,3 +47,6 @@ describe('Cypress Heroes', () => {
 
 
 })
+=======
+
+>>>>>>> 7a6c0a6 (pacotes,readme e spec de teste)
