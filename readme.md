@@ -56,3 +56,64 @@ npm run resetdb
 The client app uses an environment variable to know what the URL is for the
 backend api named `VITE_API_URL`. It defaults to "http://localhost:3001" for use
 in dev mode, and should be overriden in other environments/modes.
+
+## How to execute cypress?
+
+into de paste client 
+
+```sh
+npx cypress open
+```
+
+## Test Case by MIM
+
+**Supondo que a regra de negócio é a seguinte:**
+
+Eu como usuário quero logar na minha conta do MyHeroe  
+e contratar o herói com o super poder que 
+mais me agrada.
+
+**Requisitos:**  
+* Logar com usuario valido  
+* Visualizar todas as opçõe de herois  
+* Opção de curtir ou descurtir um heroi  
+* Ao curtir um heroi deve aumentar em +1 o numero de fans
+* Botão de contratar um herói  
+* Ao contratar um herói deve aparecer modal para confirmar ou nao a compra
+* Se a compra for realizada apresentar uma mensagem "Compra realizada com sucesso"  
+* Ao contratar o número de saves do heroi deve aumentar em +1
+
+Cenários de teste:
+
+1- Login usuário inválido  
+2- Login usuário válido   
+3- contratar um herói  
+4- descontratar um herói  
+5- curtir um fã  
+6- descurtir um fã  
+
+## Exemplo Teste Case
+
+|    Título   | Logando com email e senha válida|  
+|-------------|---------------------------------|
+|Pré condição | usuário cadastrado|
+|Passo-a-passo| Inserir usuário válido/Inserir senha válida/ Clicar em login|  
+|Resultado esperando| Usuário loga com sucesso e é redirecionado para a página inicial|  
+|Suite de Teste| Login |  
+|Ambiente de teste| Chrome|
+|Resultado Encontrado| O mesmo que o esperado|
+|Status| Passou|
+
+
+
+## Exemplo Bug report 
+
+|Título|contratar um herói|
+|------|------------------|
+|Passos para reprodução| 1 clicar no botão com o cifrão 2 Clicar no botão sim no modal de confirmação 
+|Resultado esperado| Mensagem de confirmação da contratação realizada|
+|Resultado encontrado| Após confirmação da compra, não é exibida mensagem de compra realizada com sucesso|
+|Ambiente de testes| Dev|
+|Prioridade|Baixa|
+|Tipo |Funcional|
+|Evidência|[print]|
