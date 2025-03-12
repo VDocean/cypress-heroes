@@ -71,7 +71,11 @@ into de paste client
 npx cypress open
 ```
 
+<<<<<<< HEAD
 ## Test Case by ME
+=======
+## Test Case by MIM
+>>>>>>> 8ada695 (readme)
 
 **Supondo que a regra de negócio é a seguinte:**
 
