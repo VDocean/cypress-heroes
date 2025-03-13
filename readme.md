@@ -1,3 +1,9 @@
+# Atenção
+Este repositório é um fork do repositório de mesmo nome disponível na documentação do Cypress.  
+Os passos abaixo são padrão para a instalação do repositório original.  
+Neste os pacotes npm já estão instalados.  
+Abaixo das instruções padrões há os cenários de testes que crie para meu estudo, além de bug reports.s
+
 # Cypress Heroes Demo Application
 
 This is a demo application that shows how to use Cypress to run end-to-end,
