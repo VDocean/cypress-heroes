@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import LoginPage from "../pages/LoginPage"
 import HiringPage from "../pages/HiringPage";
 
@@ -23,16 +24,19 @@ describe('Cypress Heroes', () => {
         "HiringRecord":'[data-cy="saves"]',
         "bottomLike":'[data-cy="fans"]',
         "NumberOfLikes":'[data-cy="like"]'
+=======
+import LoginPage from "../pages/LoginPage"
+import HiringPage from "../pages/HiringPage";
+>>>>>>> 5c42f4f (HiringPage)
 
 
-        
+const login=new LoginPage()
+const hiring=new HiringPage()
 
+describe('Cypress Heroes', () => { 
 
-    }
-
-
-    
     it('Deve fazer login com um usuário inválido', () => {
+<<<<<<< HEAD
         
         cy.visit('/heroes')
         cy.get(data.bottomLogin).click()
@@ -40,11 +44,16 @@ describe('Cypress Heroes', () => {
         cy.get(data.EmailField).type("test")
         cy.contains('button', 'Sign in').click();
 >>>>>>> feb01b3 (Login page)
+=======
+
+        login.loginFail()
+>>>>>>> 5c42f4f (HiringPage)
 
     });
 
     it('Deve fazer login com um usuário válido', () => {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         login.loginSucess()
 =======
@@ -55,10 +64,14 @@ describe('Cypress Heroes', () => {
         cy.contains('button', 'Sign in').click();
 
 >>>>>>> feb01b3 (Login page)
+=======
+        login.loginSucess()
+>>>>>>> 5c42f4f (HiringPage)
     });
 
     it('Contratar um herói', () => {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         login.loginSucess()
         hiring.HiringAHeroe()
@@ -75,6 +88,10 @@ describe('Cypress Heroes', () => {
             cy.get(data.HiringRecord).should('contain', valorInicial + 1);
         });
 >>>>>>> feb01b3 (Login page)
+=======
+        login.loginSucess()
+        hiring.HiringAHeroe()
+>>>>>>> 5c42f4f (HiringPage)
 
 
 
@@ -82,6 +99,7 @@ describe('Cypress Heroes', () => {
 
     it('Não contratar um herói', () => {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         login.loginSucess()
         hiring.DontHireAHeroe()
@@ -99,11 +117,17 @@ describe('Cypress Heroes', () => {
             cy.get(data.HiringRecord).should('contain', valorInicial);
         });
 >>>>>>> feb01b3 (Login page)
+=======
+        login.loginSucess()
+        hiring.DontHireAHeroe()
+        
+>>>>>>> 5c42f4f (HiringPage)
 
     });
 
     it('curtir um fã', () => {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         login.loginSucess()
         hiring.LikeAHeroe()
@@ -119,6 +143,10 @@ describe('Cypress Heroes', () => {
             cy.get(data.bottomLike).should('contain', valorInicialFans+1);
         });
 >>>>>>> feb01b3 (Login page)
+=======
+        login.loginSucess()
+        hiring.LikeAHeroe()
+>>>>>>> 5c42f4f (HiringPage)
 
         
 
